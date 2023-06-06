@@ -3,13 +3,37 @@
 <head>
   <title>Resume</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      padding: 20px 0;
+      background-color: lavenderblush;
+    }
+    
+    header h2 {
+      margin: 0;
+      font-size: 24px; /* Decreased font size */
+      color: white; /* Font color changed to white */
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>John Doe</h1>
-    <h2>Frontend Developer</h2>
+    <h2><a href="#about">About Me</a></h2>
+    <h2><a href="#experience">Experience</a></h2>
+    <h2><a href="#education">Education</a></h2>
+    <h2><a href="#skills">Skills</a></h2>
   </header>
-
+  <img src="file:///Users/anshajvats/Downloads/websiteResume.jpg" alt="websiteResume" width="200" height="200"> <!-- Replace coding.jpg with your actual image source -->
   <section id="about">
     <h2>About Me</h2>
     <p>
