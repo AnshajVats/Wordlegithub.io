@@ -24,16 +24,54 @@
       font-size: 24px; /* Decreased font size */
       color: white; /* Font color changed to white */
     }
+
+    .resume-image {
+      width: 80%; /* Adjust the width to occupy half of the screen */
+      height: auto;
+      display: block; /* Ensures the image is treated as a block element */
+      margin-left: -305px; /* Removes the default margin */
+    }
+
+    .resume-overlay {
+      position: absolute; /* Positions the overlay relative to the image */
+      bottom: 50px; /* Positions the overlay at the bottom */
+      left: 50%; /* Positions the overlay horizontally in the middle */
+      transform: translateX(-50%); /* Centers the overlay horizontally */
+      text-align: center;
+      color: white;
+    }
+
+    .resume-overlay h1,
+    .resume-overlay h2,
+    .resume-overlay h3 {
+      margin: -100px;
+    }
+
+    .resume-overlay h1 {
+      font-size: 24px; /* Decreased font size */
+    }
+
+    .resume-overlay h2 {
+      font-size: 32px; /* Increased font size */
+      font-weight: bold; /* Added font weight */
+    }
   </style>
 </head>
 <body>
   <header>
-    <h2><a href="#about">About Me</a></h2>
-    <h2><a href="#experience">Experience</a></h2>
-    <h2><a href="#education">Education</a></h2>
-    <h2><a href="#skills">Skills</a></h2>
+    <h2><a href="#about">About</a></h2>
+    <h2><a href="#experience">Education &amp; Experience</a></h2>
+    <h2><a href="#skills">Skills &amp; Languages</a></h2>
+    <h2><a href="#awards">Awards &amp; Interests</a></h2>
   </header>
-  <img src="file:///Users/anshajvats/Downloads/websiteResume.jpg" alt="websiteResume" width="200" height="200"> <!-- Replace coding.jpg with your actual image source -->
+  <div class="resume-image-container">
+    <img class="resume-image" src="websiteResume.jpg" alt="Website Resume"> <!-- Replace websiteResume.jpg with your actual image source -->
+    <div class="resume-overlay">
+      <h1 style="font-size: 18px;">HELLO, I'M</h1>
+      <h1 style="font-size: 32px; font-weight: bold;">Anshaj Vats</h1>
+      <p style="font-style: italic;">Computer Science student</p>
+    </div>
+  </div>
   <section id="about">
     <h2>About Me</h2>
     <p>
@@ -43,7 +81,7 @@
   </section>
 
   <section id="experience">
-    <h2>Experience</h2>
+    <h2>Education &amp; Experience</h2>
     <ul>
       <li>
         <h3>ABC Company</h3>
@@ -52,35 +90,4 @@
         <ul>
           <li>Developed and maintained company website</li>
           <li>Collaborated with the design team to implement UI/UX improvements</li>
-          <li>Optimized website performance for faster load times</li>
-        </ul>
-      </li>
-      <!-- Add more experience items here -->
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <h3>University of XYZ</h3>
-        <p>Bachelor of Science in Computer Science</p>
-        <p>2014 - 2018</p>
-      </li>
-      <!-- Add more education items here -->
-    </ul>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Responsive Design</li>
-      <li>UI/UX Design</li>
-    </ul>
-  </section>
-
-</body>
-</html>
+         
