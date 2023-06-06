@@ -1,21 +1,29 @@
 <style>
     body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      scroll-behavior: smooth; /* Add smooth scrolling behavior */
-      background-color: burlywood;
+        margin: 0;
+        padding: 0;
+        background-color: burlywood;
+        overflow-x: hidden; /* Add this line to hide horizontal scrollbars */
     }
-    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        scroll-behavior: smooth;
+        background-color: burlywood;
+        min-height: 100vh; /* Set a minimum height to ensure the background color covers the entire viewport */
+        width: 100%; /* Add this line to ensure content fills the entire width */
+    }
+      
     header {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 102%;
+      width: 100%;
       padding: 40px 0;
-      background-color: burlywood;
       margin-top: -8px;
       margin-left: -7.8px;
+      background-color: transparent; /* Remove the background color */
     }
     
     header h2 {
@@ -38,11 +46,11 @@
       height: 100%;
       display: block; /* Ensures the image is treated as a block element */
       margin-right: -310px; /* Adds spacing between the images */
-      margin-top: -296px;/* Adjust the margin-top value to move the image vertically */
+      margin-top: -283px;/* Adjust the margin-top value to move the image vertically */
     }
 
     .resume-image {
-      width: 71%; /* Adjust the width to occupy half of the screen */
+      width: 69.6%; /* Adjust the width to occupy half of the screen */
       height: 100%;
       display: block; /* Ensures the image is treated as a block element */
       margin-left: -200px; /* Removes the default margin */
@@ -65,7 +73,6 @@
     .resume-overlay h3 {
       margin: 0;
     }
-
     .resume-overlay h1 {
       font-size: 100px; /* Decreased font size */
     }
@@ -80,4 +87,8 @@
         background-color: burlywood;
         color: #f6f6f6f6;
     }
+
+    section {
+        background-color: transparent; /* Remove the background color */
+      }
   </style>
