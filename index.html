@@ -3,59 +3,6 @@
 <head>
   <title>Resume</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    header {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      padding: 20px 0;
-      background-color: lavenderblush;
-    }
-    
-    header h2 {
-      margin: 0;
-      font-size: 24px; /* Decreased font size */
-      color: white; /* Font color changed to white */
-    }
-
-    .resume-image {
-      width: 80%; /* Adjust the width to occupy half of the screen */
-      height: auto;
-      display: block; /* Ensures the image is treated as a block element */
-      margin-left: -305px; /* Removes the default margin */
-    }
-
-    .resume-overlay {
-      position: absolute; /* Positions the overlay relative to the image */
-      bottom: 50px; /* Positions the overlay at the bottom */
-      left: 50%; /* Positions the overlay horizontally in the middle */
-      transform: translateX(-50%); /* Centers the overlay horizontally */
-      text-align: center;
-      color: white;
-    }
-
-    .resume-overlay h1,
-    .resume-overlay h2,
-    .resume-overlay h3 {
-      margin: -100px;
-    }
-
-    .resume-overlay h1 {
-      font-size: 24px; /* Decreased font size */
-    }
-
-    .resume-overlay h2 {
-      font-size: 32px; /* Increased font size */
-      font-weight: bold; /* Added font weight */
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -66,11 +13,20 @@
   </header>
   <div class="resume-image-container">
     <img class="resume-image" src="websiteResume.jpg" alt="Website Resume"> <!-- Replace websiteResume.jpg with your actual image source -->
+    <img class="myPIC-image" src="myImage.JPG" alt="my Image"> <!-- Replace myImage.JPG with your second image source -->
     <div class="resume-overlay">
       <h1 style="font-size: 18px;">HELLO, I'M</h1>
       <h1 style="font-size: 32px; font-weight: bold;">Anshaj Vats</h1>
       <p style="font-style: italic;">Computer Science student</p>
     </div>
+    <div class="contact-info">
+      <p>Anshaj Vats.<br></p>
+      <p>BS in Computer Science</p>
+      <p>San Francisco, California</p>
+      <p>9931633906vats@gmail.com</p>
+      <p>251-459-1826</p>
+    </div>
+    
   </div>
   <section id="about">
     <h2>About Me</h2>
@@ -90,4 +46,3 @@
         <ul>
           <li>Developed and maintained company website</li>
           <li>Collaborated with the design team to implement UI/UX improvements</li>
-         

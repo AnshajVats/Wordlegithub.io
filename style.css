@@ -1,0 +1,76 @@
+<style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      padding: 40px 0;
+      background-color: lavenderblush;
+    }
+    
+    header h2 {
+      margin: 0;
+      font-size: 24px; /* Decreased font size */
+      color: white; /* Font color changed to white */
+      font-style: italic; /* Added font-style property */
+    }
+
+    .resume-image-container {
+      display: flex; /* Ensures the images are displayed in a row */
+      align-items: center; /* Aligns the images vertically */
+      justify-content: center; /* Centers the images horizontally */
+      margin-bottom: 20px; /* Adds some spacing between the images and the overlay */
+    }
+
+    .myPIC-image {
+      width: 20%; /* Adjust the width to occupy half of the screen */
+      height: 100%;
+      display: block; /* Ensures the image is treated as a block element */
+      margin-right: -310px; /* Adds spacing between the images */
+      margin-top: -300px;/* Adjust the margin-top value to move the image vertically */
+    }
+
+    .resume-image {
+      width: 71.5%; /* Adjust the width to occupy half of the screen */
+      height: 100%;
+      display: block; /* Ensures the image is treated as a block element */
+      margin-left: -200px; /* Removes the default margin */
+      margin-right: 10px; /* Adds spacing between the images */
+      max-height: 200vh; /* Set the maximum height of the image to 80% of the viewport height */
+    }
+
+    .resume-overlay {
+      position: absolute; /* Positions the overlay relative to the image */
+      bottom: 50px; /* Positions the overlay at the bottom */
+      left: 50%; /* Positions the overlay horizontally in the middle */
+      transform: translateX(-50%); /* Centers the overlay horizontally */
+      text-align: center;
+      color: white;
+    }
+
+    .resume-overlay h1,
+    .resume-overlay h2,
+    .resume-overlay h3 {
+      margin: 0;
+    }
+
+    .resume-overlay h1 {
+      font-size: 24px; /* Decreased font size */
+    }
+
+    .resume-overlay h2 {
+      font-size: 32px; /* Increased font size */
+      font-weight: bold; /* Added font weight */
+    }
+
+    .contact-info{
+        margin-bottom: -380px;/* Adjust the margin-top value to move the image vertically */
+        margin-left: 60px;
+    }
+  </style>
