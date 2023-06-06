@@ -11,7 +11,7 @@
       align-items: center;
       width: 100%;
       padding: 40px 0;
-      background-color: lavenderblush;
+      background-color: greenyellow;
     }
     
     header h2 {
@@ -33,11 +33,11 @@
       height: 100%;
       display: block; /* Ensures the image is treated as a block element */
       margin-right: -310px; /* Adds spacing between the images */
-      margin-top: -300px;/* Adjust the margin-top value to move the image vertically */
+      margin-top: -296px;/* Adjust the margin-top value to move the image vertically */
     }
 
     .resume-image {
-      width: 71.5%; /* Adjust the width to occupy half of the screen */
+      width: 71%; /* Adjust the width to occupy half of the screen */
       height: 100%;
       display: block; /* Ensures the image is treated as a block element */
       margin-left: -200px; /* Removes the default margin */
