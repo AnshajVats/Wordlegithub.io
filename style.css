@@ -3,22 +3,27 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      scroll-behavior: smooth; /* Add smooth scrolling behavior */
+      background-color: burlywood;
     }
     
     header {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 100%;
+      width: 102%;
       padding: 40px 0;
-      background-color: greenyellow;
+      background-color: burlywood;
+      margin-top: -8px;
+      margin-left: -7.8px;
     }
     
     header h2 {
       margin: 0;
-      font-size: 24px; /* Decreased font size */
-      color: white; /* Font color changed to white */
-      font-style: italic; /* Added font-style property */
+      font-size: 20px; /* Decreased font size */
+      color: #0cf6f6f6; /* Font color changed to white */
+      font-family: fantasy;
+      font-style: italic;
     }
 
     .resume-image-container {
@@ -48,10 +53,11 @@
     .resume-overlay {
       position: absolute; /* Positions the overlay relative to the image */
       bottom: 50px; /* Positions the overlay at the bottom */
-      left: 50%; /* Positions the overlay horizontally in the middle */
+      left: 30%; /* Positions the overlay horizontally in the middle */
       transform: translateX(-50%); /* Centers the overlay horizontally */
-      text-align: center;
-      color: white;
+      text-align: left;
+      color: #f6f6f6f6;
+      font-size: 20px;
     }
 
     .resume-overlay h1,
@@ -61,16 +67,17 @@
     }
 
     .resume-overlay h1 {
-      font-size: 24px; /* Decreased font size */
+      font-size: 100px; /* Decreased font size */
     }
 
     .resume-overlay h2 {
-      font-size: 32px; /* Increased font size */
-      font-weight: bold; /* Added font weight */
+      font-size: 10px; /* Increased font size */
     }
 
     .contact-info{
         margin-bottom: -380px;/* Adjust the margin-top value to move the image vertically */
         margin-left: 60px;
+        background-color: burlywood;
+        color: #f6f6f6f6;
     }
   </style>
