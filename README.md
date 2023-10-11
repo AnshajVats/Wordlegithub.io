@@ -1,1 +1,1 @@
-# wordle.github.io
+# https://anshajvats.github.io/Wordlegithub.io/
