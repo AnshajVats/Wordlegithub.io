@@ -1,0 +1,22 @@
+/* this is a css file for the index.html. It makes the enitre screen black as
+one of the feature */
+
+body {
+  background-color: #17190E;
+}
+
+/* make the heading color white */
+h1 {
+  color: white;
+}
+
+/* style for the image*/
+.main {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f1f1f1;
+}
+

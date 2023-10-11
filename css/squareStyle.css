@@ -1,0 +1,19 @@
+#board-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.square{
+    border: 2px solid rgb(58,58,60);
+}

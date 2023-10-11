@@ -1,56 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Resume</title>
-  <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <title>Wordle</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <h2><a href="#about">About</a></h2>
-      <h2><a href="#experience">Education &amp; Experience</a></h2>
-      <h2><a href="#skills">Skills &amp; Languages</a></h2>
-      <h2><a href="#awards">Awards &amp; Interests</a></h2>
-    </header>
-    <div class="resume-image-container">
-      <img class="resume-image" src="pexels-pixabay-459653.jpg" alt="Website Resume"> <!-- Replace websiteResume.jpg with your actual image source -->
-      <img class="myPIC-image" src="myImage.JPG" alt="my Image"> <!-- Replace myImage.JPG with your second image source -->
-      <div class="resume-overlay">
-        <h1 style="font-size: 50px; color: #fffffff6;">HELLO, I'M</h1>
-        <h1 style="font-size: 150px; color: #e1e1e1f6; font-weight: bold;">Anshaj Vats</h1>
-        <p style="font-style: italic;">Computer Science student</p>
-      </div>
-      <div class="contact-info">
-        <p>Anshaj Vats.<br></p>
-        <p>BS in Computer Science</p>
-        <p>San Francisco, California</p>
-        <p>9931633906vats@gmail.com</p>
-        <p>251-459-1826</p>
-      </div>
-      
+    <h1 style="text-align: center">Wordle</h1>
+     <!-- add a css file taht makes the entire screen black -->
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- draw a line after wordle through entire screen -->
+    <hr>
+    <!-- add a sidenav which is hidden by default and opens by click on menu.png-->
+    <div id="mySidenav" class="sidenav">
+        <!-- add a close button on top right corner of sidenav -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- add a link to index.html -->
+        <a href="index.html">Home</a>
+        <!-- add a link to about.html -->
+        <a href="about.html">How to play</a>
+        <!-- add a link to contact.html -->
+        <a href="contact.html">Contact</a>
     </div>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a passionate frontend developer with experience in HTML, CSS, and JavaScript.
-        I enjoy creating intuitive and responsive user interfaces to enhance user experiences.
-      </p>
-    </section>
+    <link rel="stylesheet" href="css/sideNav.css"> 
 
-    <section id="experience">
-      <h2>Education &amp; Experience</h2>
-      <ul>
-        <li>
-          <h3>ABC Company</h3>
-          <p>Frontend Developer</p>
-          <p>2018 - 2020</p>
-          <ul>
-            <li>Developed and maintained company website</li>
-            <li>Collaborated with the design team to implement UI/UX improvements</li>
+    <div id="main" class="main">
+        <!-- add a button to open sidenav -->
+        <span style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    </div>
 
-          </ul>
-        </li>
-      </ul>
-    </section>
-  </div>
-</body>
+    <!-- add a js file that makes the sidenav open and close -->
+    <script src="js/script.js"></script>
+    <div id="board-container">
+        <div id="board">
+            
+        </div>
+    </div>
+    <link rel="import" href="square.html">
+
+    
+    
+    <!-- add a js file that makes the wordle -->
+    <script src="js/wordle.js"></script>
+    <link rel="stylesheet"  href="css/squareStyle.css">
+    
+</html>
