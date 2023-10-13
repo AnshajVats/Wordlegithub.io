@@ -16,4 +16,8 @@
 
 .square{
     border: 2px solid rgb(58,58,60);
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 2rem;
+    font-style: Bold;
 }

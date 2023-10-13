@@ -1,22 +1,45 @@
 /* this is a css file for the index.html. It makes the enitre screen black as
 one of the feature */
-
-body {
-  background-color: #17190E;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-/* make the heading color white */
-h1 {
+html, body{
+  height: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container{
+  display: flex;
+  background-color: black;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wordle-heading{
+  border-bottom: 1px solid rgb(58,58,60);
+  background: black;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* style for the image*/
-.main {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #f1f1f1;
+.wordle-title {
+  flex-grow: 1; /* Allows "Wordle" to take up available space and be centered */
+  padding-left: 1130px;
+}
+
+.title {
+  color: ghostboro;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.4rem 0 0.4rem 0;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
