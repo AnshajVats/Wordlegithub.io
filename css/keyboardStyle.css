@@ -1,5 +1,9 @@
 #keyboard-container{
+    display: flex;
+    justify-content: center;
     height: 200px;
+    width: 100%;
+    margin: 0 auto;
 }
 .keyboard-row{
     display: flex;
@@ -23,4 +27,11 @@
     margin-right: 6px;
     border-radius: 4px;
     user-select: none;
+}
+.keyboard-row button.wide-button {
+    flex-grow: 1.5;
+}
+
+.spacer-half{
+    flex-grow: 0.5;
 }

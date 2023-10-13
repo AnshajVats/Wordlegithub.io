@@ -41,7 +41,7 @@
   #main {
     transition: margin-left .5s;
     padding: 5px;
-    background: black;
+    background: rgb(12, 12, 13);
     color: white;
     top: 0;
     display: inline-block;

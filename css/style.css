@@ -13,33 +13,39 @@ html, body{
 
 #container{
   display: flex;
-  background-color: black;
+  background-color: rgb(12,12,13);
   height: 100%;
+  flex-direction: column;
   align-items: center;
+}
+
+#game {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
   flex-direction: column;
 }
 
 .wordle-heading{
   border-bottom: 1px solid rgb(58,58,60);
-  background: black;
+  background: rgb(12,12,13);
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
-.wordle-title {
-  flex-grow: 1; /* Allows "Wordle" to take up available space and be centered */
-  padding-left: 1130px;
-}
 
 .title {
   color: ghostboro;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0.4rem 0 0.4rem 0;
-  text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
   'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  flex-grow: 1; /* Allows "Wordle" to take up available space and be centered */
+  position: absolute;
+  left: 47%;
 }
 

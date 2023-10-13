@@ -1,0 +1,15 @@
+The code wordle.js is a JavaScript implementation of the popular game Wordle. The game is played by guessing a five-letter word, and the player has six attempts to guess the correct word. The game board consists of 30 squares, and each square represents a letter in the word. The game board is created using the createSquares() function, which creates 30 div elements with the class square and an ID from 1 to 30.
+
+The getNewWord() function fetches a list of words from a text file and selects a random word from the list. The selected word is stored in the word variable. The wordsArray variable is an array of all the words in the text file. If the network response is not ok, an error is thrown. If the text content is empty, the function filters out any empty strings.
+
+The updateGuessedWords() function updates the game board with the letters that the player has guessed. The function takes a letter as an argument and adds it to the currentWordArr array, which represents the current word that the player is guessing. The function then updates the game board by adding the letter to the next available square. The availableSpace variable keeps track of the next available square.
+
+The getTileColor() function returns the color of a square based on whether the letter in the square is correct and whether the letter is in the correct position. If the letter is incorrect, the square is colored gray. If the letter is correct but in the wrong position, the square is colored yellow. If the letter is correct and in the correct position, the square is colored green.
+
+The handleSubmitWord() function is called when the player submits a word. The function checks if the word is five letters long and if it is a valid word. If the word is not five letters long, an alert is displayed, and the function exits. If the word is not a valid word, an alert is displayed, and the function exits. If the word is valid, the function updates the game board with the correct colors and displays an alert if the player has won or lost.
+
+The handleDeleteLetter() function is called when the player deletes a letter. The function removes the last letter from the currentWordArr array and updates the game board by removing the letter from the last square.
+
+The code also includes an event listener that calls the createSquares() and getNewWord() functions when the DOM is loaded. The code also includes a loop that adds event listeners to the keyboard buttons. When a button is clicked, the corresponding function is called.
+
+To improve the code's readability, the code could be refactored to use more descriptive variable names. The code could also be split into smaller functions to improve modularity. To improve performance, the code could be optimized to reduce the number of DOM manipulations. For example, the updateGuessedWords() function could be modified to update the game board only when the player submits a word.
