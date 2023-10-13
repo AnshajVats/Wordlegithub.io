@@ -1,98 +1,92 @@
+<!-- FILEPATH: /Users/anshajvats/workspace/IamAnshajV.github.io/index.html -->
+<!-- This is the HTML code for the Wordle game webpage. It includes links to CSS and JavaScript files, a side navigation bar, a button to open the side navigation bar, a game board, and a keyboard for user input. -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Wordle</title>
-        <script src="js/wordle.js"></script>
-        <script src="js/script.js"></script>
-        <link rel="stylesheet" href="css/style.css"> 
-        <link rel="stylesheet"  href="css/squareStyle.css">   
-        <link rel="stylesheet"  href="css/keyboardStyle.css">
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
-
-    </head>
-<body>
-
-     <!-- add a css file taht makes the entire screen black -->
-    <!-- draw a line after wordle through entire screen -->
-
-    <!-- add a sidenav which is hidden by default and opens by click on menu.png-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wordle</title>
+    <script src="js/wordle.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/squareStyle.css" />
+    <link rel="stylesheet" href="css/keyboardStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
     <div id="mySidenav" class="sidenav">
-        <!-- add a close button on top right corner of sidenav -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <!-- add a link to index.html -->
-        <a href="index.html">Home</a>
-        <!-- add a link to about.html -->
-        <a href="about.html">How to play</a>
-        <!-- add a link to contact.html -->
-        <a href="contact.html">Contact</a>
+      <!-- add a close button on top right corner of sidenav -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <!-- add a link to index.html -->
+      <a href="index.html">Home</a>
+      <!-- add a link to about.html -->
+      <a href="about.html">How to play</a>
+      <!-- add a link to contact.html -->
+      <a href="contact.html">Contact</a>
     </div>
-    <link rel="stylesheet" href="css/sideNav.css"> 
+    <link rel="stylesheet" href="css/sideNav.css" />
 
-    
-        <!-- add a button to open sidenav -->
-        <div class="wordle-heading">
-            <div id="main" class="main">
-                <span style="font-size:28px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
-            </div>
-            <div class="title">
-                <h1>Wordle</h1>
-            </div>
-        </div>
+    <!-- add a button to open sidenav -->
+    <div class="wordle-heading">
+      <div id="main" class="main">
+        <span style="font-size: 28px; cursor: pointer" onclick="openNav()"
+          >&#9776; Menu</span
+        >
+      </div>
+      <div class="title">
+        <h1>Wordle</h1>
+      </div>
+    </div>
 
     <div id="container">
-        <div id="game">
-            <div id="board-container">
-                <div id="board"></div>
-            </div>
-            
-            <div id = Keyboard-container>
-                <div class="keyboard-row">
-                    <button data-key="q">q</button>
-                    <button data-key="w">w</button>
-                    <button data-key="e">e</button>
-                    <button data-key="r">r</button>
-                    <button data-key="t">t</button>
-                    <button data-key="y">y</button>
-                    <button data-key="u">u</button>
-                    <button data-key="i">i</button>
-                    <button data-key="o">o</button>
-                    <button data-key="p">p</button>
-                </div>
-                <div class="keyboard-row">
-                    <div class="spacer-half"></div>
-                    <button data-key="a">a</button>
-                    <button data-key="s">s</button>
-                    <button data-key="d">d</button>
-                    <button data-key="f">f</button>
-                    <button data-key="g">g</button>
-                    <button data-key="h">h</button>
-                    <button data-key="j">j</button>
-                    <button data-key="k">k</button>
-                    <button data-key="l">l</button>
-                    <div class="spacer-half"></div>    
-                </div>
-                <div class="keyboard-row">
-                    <button data-key="enter" class="wide-button">Enter</button>
-                    <button data-key="z">z</button>
-                    <button data-key="x">x</button>
-                    <button data-key="c">c</button>
-                    <button data-key="v">v</button>
-                    <button data-key="b">b</button>
-                    <button data-key="n">n</button>
-                    <button data-key="m">m</button>
-                    <button data-key="del" class="wide-button">del</button>
-                </div>
-            </div>            
+      <div id="game">
+        <div id="board-container">
+          <div id="board"></div>
         </div>
+
+        <div id="Keyboard-container">
+          <div class="keyboard-row">
+            <button data-key="q">q</button>
+            <button data-key="w">w</button>
+            <button data-key="e">e</button>
+            <button data-key="r">r</button>
+            <button data-key="t">t</button>
+            <button data-key="y">y</button>
+            <button data-key="u">u</button>
+            <button data-key="i">i</button>
+            <button data-key="o">o</button>
+            <button data-key="p">p</button>
+          </div>
+          <div class="keyboard-row">
+            <div class="spacer-half"></div>
+            <button data-key="a">a</button>
+            <button data-key="s">s</button>
+            <button data-key="d">d</button>
+            <button data-key="f">f</button>
+            <button data-key="g">g</button>
+            <button data-key="h">h</button>
+            <button data-key="j">j</button>
+            <button data-key="k">k</button>
+            <button data-key="l">l</button>
+            <div class="spacer-half"></div>
+          </div>
+          <div class="keyboard-row">
+            <button data-key="enter" class="wide-button">Enter</button>
+            <button data-key="z">z</button>
+            <button data-key="x">x</button>
+            <button data-key="c">c</button>
+            <button data-key="v">v</button>
+            <button data-key="b">b</button>
+            <button data-key="n">n</button>
+            <button data-key="m">m</button>
+            <button data-key="del" class="wide-button">del</button>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    
-
-    <!-- add a js file that makes the wordle -->
-
-    </body>
+  </body>
 </html>
